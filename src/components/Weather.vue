@@ -2,7 +2,7 @@
   <div class="weather-frame">
     <h1></h1>
     <input id="city-name" type="text" placeholder="Enter city name..."/>
-    <i class="material-icons md-48">search</i>
+    <button class="btn-search"><i class="material-icons md-48">search</i></button>
   </div>
 </template>
 
@@ -1417,15 +1417,21 @@ export default {
   justify-content: center;
   background-color: #fccb90;
   background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   min-height: 75vh;
+}
+
+.btn-search{
+  background-color: transparent;
+  border: none;
+  padding: 5px 0 0 0;
+  margin-left: 10px;
 }
 
 .material-icons.md-48{
   font-size: 48px;
   color: rgba(0, 0, 0, 0.3);
-  margin-left: 10px;
 }
 
 #city-name{
