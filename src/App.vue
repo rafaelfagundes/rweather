@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view/>
+    <div class="container">
+      <div class="container-item"><router-view/></div>
+    </div>
   </div>
 </template>
 
@@ -11,6 +13,27 @@ export default {
 </script>
 
 <style>
-#app {
+input {
+  outline: none;
 }
+
+body{
+  background-color: #fff;
+
+}
+
+.container{
+  height: 96vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container-item{
+  text-align: center;
+  width: 75vw;
+  font-family: 'Roboto';
+}
+
 </style>

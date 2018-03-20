@@ -1,26 +1,8 @@
 <template>
-  <div id="weather">
-    <router-view/>
-    <div class="z-depth-2">
-      <div class="row">
-        <div class="col s12">
-          <div class="input-field col s9 center-align">
-            <input id="search" type="search" class="validate">
-            <label for="search">Search</label>
-          </div>
-          <div class="input-field col s3 center-align">
-            <a class="waves-effect waves-light btn">
-              <i class="material-icons">search</i>
-            </a>
-            <a class="waves-effect waves-light btn">
-              <i class="material-icons">location_searching</i>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
+  <div class="weather-frame">
+    <h1></h1>
+    <input id="city-name" type="text" placeholder="Enter city name..."/>
+    <i class="material-icons md-48">search</i>
   </div>
 </template>
 
@@ -1428,6 +1410,34 @@ export default {
 </script>
 
 <style>
-#weather {
+
+.weather-frame{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fccb90;
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  min-height: 75vh;
 }
+
+.material-icons.md-48{
+  font-size: 48px;
+  color: rgba(0, 0, 0, 0.3);
+  margin-left: 10px;
+}
+
+#city-name{
+  font-weight: 100;
+  font-size: 2.5vw;
+  color: #333;
+  background-color: rgba(255,255,255,0.15);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 30vw;
+  text-align: center;
+}
+
 </style>
