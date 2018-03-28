@@ -1,9 +1,12 @@
 .DS_Store
-node_modules/
+client/node_modules/
+server/node_modules/
+layout/
 /dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+server/src/ApiKey.js
 
 # Editor directories and files
 .idea
