@@ -7,6 +7,8 @@ $color4: rgba(38, 84, 124, 1);
 $color5: rgba(239, 71, 111, 1);
 */
 
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
 input, button {
     outline: none;
 }
@@ -27,7 +29,7 @@ body{
 .container-item{
     text-align: center;
     width: 75vw;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 .app-frame{
@@ -42,4 +44,66 @@ body{
     min-height: 75vh;
 }
 
+/* Colors */
+.color0{
+    color: rgba(37, 37, 37, 0.8) !important;
+} 
+.color1{
+    color: rgba(246, 211, 101, 0.9) !important;
+} 
+.color2{
+    color: rgba(253, 160, 133, 0.9) !important;
+} 
+.color3{
+    color: rgba(191, 33, 30, 1) !important;
+} 
+.color4{
+    color: rgba(38, 84, 124, 0.9) !important;
+} 
+.color5{
+    color: rgba(239, 71, 111, 0.9) !important;
+}
+.color6{
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+.color7{
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+.color8{
+    color: rgba(255, 255, 255, 0.4) !important;
+}
 
+/* Text */
+.fw100{
+    font-weight: 100;
+}
+
+.fw300{
+    font-weight: 300;
+}
+
+.fw400{
+    font-weight: 400;
+}
+
+.fw600{
+    font-weight: 600;
+}
+
+.fw700{
+    font-weight: 700;
+}
+.italic{
+    font-style: italic;
+}
+.super{
+    vertical-align: super;
+}
+
+.link{
+    color: currentColor;
+    text-decoration: none;
+}
+.serif{
+    font-family: 'Alegreya', sans-serif;
+}

@@ -2,12 +2,12 @@
   <div class="weather-frame app-frame">
     <div>
       <form @submit.prevent="weather">
-      <input id="city-name" type="text" placeholder="Enter city name..."
-             v-model="searchQuery" class="color0"/>
-      <button type="submit" class="btn-search" :disabled="!searchQuery">
-        <i class="material-icons md-48">search</i>
-      </button>
-    </form>
+        <input id="city-name" type="text" placeholder="Enter city name..."
+              v-model="searchQuery" class="color0"/>
+        <button type="submit" class="btn-search" :disabled="!searchQuery">
+          <i class="material-icons md-48">search</i>
+        </button>
+      </form>
     </div>
     <Spinner v-if="showSpinner"></Spinner>
     <div class="error color5" v-if="errorMsg">
@@ -57,6 +57,11 @@
       <div>
         <div class="desc color0">{{ serverData.weather[0].description }}</div>
       </div>
+    </div>
+    <div class="about-link">
+      <router-link to="about" class="text fw400 color4 link">
+        <span class="info-icon color0 fw700 serif">i</span>About
+      </router-link>
     </div>
   </div>
 </template>
